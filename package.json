@@ -11,7 +11,8 @@
     "preview": "vite preview",
     "preview:test": "vite preview --mode=test",
     "lint": "eslint . --ext .ts,.tsx,.js,.vue",
-    "lint:fix": "eslint . --ext .ts,.tsx,.js,.vue --fix"
+    "lint:fix": "eslint . --ext .ts,.tsx,.js,.vue --fix",
+    "prepare": "husky install"
   },
   "dependencies": {
     "element-plus": "^2.2.32",

@@ -1,6 +1,6 @@
 import { ref, computed, Ref } from 'vue'
 import { defineStore } from 'pinia'
-import { UserStoreId } from './store-id';
+import { UserStoreId } from './store-id'
 
 interface User {
   id?: string,
