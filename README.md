@@ -6,12 +6,16 @@ vue-web powered by Vue3, vue-router, pinia, TypeScript and Vite.
 
 ```shell
 npm install
+
+pnpm install
 ```
 
 ## Run
 
 ```shell
 npm run dev
+
+pnpm run dev
 ```
 
 ## Build
@@ -20,12 +24,16 @@ npm run dev
 
 ```shell
 npm run build
+
+pnpm run build
 ```
 
 ### Build for Test
 
 ```shell
 npm run build:test
+
+pnpm run build:test
 ```
 
 ## Preview
@@ -34,12 +42,16 @@ npm run build:test
 
 ```shell
 npm run preview
+
+pnpm run preview
 ```
 
 ### Preview for Test
 
 ```shell
 npm run preview:test
+
+pnpm run preview:test
 ```
 
 ## .env Description
