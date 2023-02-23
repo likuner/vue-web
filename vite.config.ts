@@ -7,7 +7,9 @@ import Components from 'unplugin-vue-components/vite'
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 import autoprefixer from 'autoprefixer'
 
-export default defineConfig(() => {
+export default defineConfig(({ mode }) => {
+  const isdev = mode === 'development'
+
   return {
     plugins: [
       vue(),
@@ -15,7 +17,10 @@ export default defineConfig(() => {
         minify: false,
         inject: {
           data: {
-            buildTime: new Date().toLocaleString()
+            buildTime: new Date().toLocaleString(),
+            injectScript: isdev
+              ? `<script type="module" src="./src/mock/index.ts"></script>`
+              : ''
           }
         }
       }),
@@ -46,7 +51,8 @@ export default defineConfig(() => {
       }
     },
     build: {
-      assetsInlineLimit: 8192
+      assetsInlineLimit: 8192,
+      chunkSizeWarningLimit: 1024
     },
     server: {
       port: 3000,

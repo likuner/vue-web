@@ -4,6 +4,7 @@ importers:
 
   .:
     specifiers:
+      '@types/mockjs': ^1.0.7
       '@types/node': ^18.14.0
       '@typescript-eslint/eslint-plugin': ^5.53.0
       '@typescript-eslint/parser': ^5.53.0
@@ -36,6 +37,7 @@ importers:
       vue: 3.2.47
       vue-router: 4.1.6_vue@3.2.47
     devDependencies:
+      '@types/mockjs': 1.0.7
       '@types/node': 18.14.0
       '@typescript-eslint/eslint-plugin': 5.53.0_ny4s7qc6yg74faf3d6xty2ofzy
       '@typescript-eslint/parser': 5.53.0_7kw3g6rralp5ps6mg3uyzz6azm
@@ -681,6 +683,10 @@ packages:
   /@types/lodash/4.14.191:
     resolution: {integrity: sha512-BdZ5BCCvho3EIXw6wUCXHe7rS53AIDPLE+JzwgT+OsJk53oBfbSmZZ7CX4VaRoN78N+TJpFi9QPlfIVNmJYWxQ==}
     dev: false
+
+  /@types/mockjs/1.0.7:
+    resolution: {integrity: sha512-OCxXz6hEaJOVpRwuJMiVY5a6LtJcih+br9gwB/Q8ooOBikvk5FpBQ31OlNimXo3EqKha1Z7PFBni+q9m+8NCWg==}
+    dev: true
 
   /@types/node/18.14.0:
     resolution: {integrity: sha512-5EWrvLmglK+imbCJY0+INViFWUHg1AHel1sq4ZVSfdcNqGy9Edv3UB9IIzzg+xPaUcAgZYcfVs2fBcwDeZzU0A==}

@@ -5,7 +5,7 @@ import { UserStoreId } from './store-id'
 interface User {
   id?: string,
   name?: string,
-  phone?: string
+  email?: string
 }
 
 export const useUserStore = defineStore(UserStoreId, () => {
@@ -17,7 +17,7 @@ export const useUserStore = defineStore(UserStoreId, () => {
 
   const userName = computed(() => user.value.name)
 
-  const userPhone = computed(() => user.value.phone)
+  const userEmail = computed(() => user.value.email)
 
   // action
   function setUser(userInfo: User) {
@@ -32,14 +32,14 @@ export const useUserStore = defineStore(UserStoreId, () => {
     user.value.name = name
   }
 
-  function setUserPhone(phone: string) {
-    user.value.phone = phone
+  function setUserEmail(email: string) {
+    user.value.email = email
   }
 
   return {
-    user, userId, userName, userPhone,
-    setUser, setUserId, setUserName, setUserPhone
+    user, userId, userName, userEmail,
+    setUser, setUserId, setUserName, setUserEmail
   }
 
-}, { persist: { paths: ['user.name', 'user.id', 'user.phone'] } })
+}, { persist: { paths: ['user.name', 'user.id', 'user.email'] } })
 
