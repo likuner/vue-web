@@ -1,7 +1,7 @@
 
 import { ref, Ref } from 'vue'
 import { defineStore } from 'pinia'
-import { PageStoreId } from "./store-id";
+import { PageStoreId } from './store-id'
 
 export const usePageStore = defineStore(PageStoreId, () => {
   const pages: Ref<string[]> = ref([])
