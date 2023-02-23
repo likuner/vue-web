@@ -6,6 +6,7 @@
   "packageManager": "pnpm@7.27.1",
   "scripts": {
     "dev": "vite",
+    "dev:test": "vite --mode=test",
     "build": "vue-tsc && vite build",
     "build:dev": "vue-tsc && vite build --mode=development",
     "build:test": "vue-tsc && vite build --mode=test",
