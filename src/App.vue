@@ -12,5 +12,4 @@ import { usePageStore } from '@/store/page'
 const pageStore = usePageStore()
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>

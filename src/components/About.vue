@@ -1,7 +1,7 @@
 <template>
   <ElSpace direction="vertical" alignment="flex-start">
     <ElAlert type="warning" effect="dark" :closable="false">
-      Hello, {{userStore.userName}}
+      Hello, {{ userStore.userName }}
     </ElAlert>
     <ElButton @click="handlClick" type="primary">Back</ElButton>
   </ElSpace>
@@ -9,28 +9,28 @@
 </template>
 
 <script setup lang="ts">
-  import { onMounted, onActivated } from 'vue'
-  import { useRouter } from 'vue-router'
-  import { useUserStore } from '@/store/user'
+import { onMounted, onActivated } from 'vue'
+import { useRouter } from 'vue-router'
+import { useUserStore } from '@/store/user'
 
-  const router = useRouter()
-  const userStore = useUserStore()
+const router = useRouter()
+const userStore = useUserStore()
 
-  const handlClick = () => {
-    router.back()
-  }
+const handlClick = () => {
+  router.back()
+}
 
-  onMounted(() => {
-    console.log('about mounted')
-  })
+onMounted(() => {
+  console.log('about mounted')
+})
 
-  onActivated(() => {
-    console.log('about activated')
-  })
+onActivated(() => {
+  console.log('about activated')
+})
 </script>
 
 <style lang="scss" scoped>
-  .test {
-    color: $base-color;
-  }
+.test {
+  color: $base-color;
+}
 </style>
