@@ -30,6 +30,7 @@
     "@typescript-eslint/eslint-plugin": "^5.53.0",
     "@typescript-eslint/parser": "^5.53.0",
     "@vitejs/plugin-vue": "^4.0.0",
+    "@vue/runtime-core": "^3.2.47",
     "autoprefixer": "^10.4.13",
     "eslint": "^8.34.0",
     "eslint-plugin-vue": "^9.9.0",
