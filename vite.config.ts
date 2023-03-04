@@ -14,7 +14,7 @@ export default defineConfig(({ mode }) => {
     plugins: [
       vue(),
       AutoImport({
-        imports: ['vue'],
+        imports: ['vue', 'vue-router'],
         resolvers: [ElementPlusResolver()]
       }),
       Components({
