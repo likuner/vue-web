@@ -16,7 +16,8 @@ export default defineConfig(({ mode }) => {
       AutoImport({
         imports: [
           'vue',
-          'vue-router'
+          'vue-router',
+          'pinia'
         ],
         resolvers: [ElementPlusResolver()]
       }),

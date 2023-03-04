@@ -9,8 +9,6 @@
 </template>
 
 <script setup lang="ts">
-// import { onMounted, onActivated } from 'vue'
-import { useRouter } from 'vue-router'
 import { useUserStore } from '@/store/user'
 
 const router = useRouter()

@@ -1,4 +1,3 @@
-import { createApp } from 'vue'
 import router from './router'
 import pinia from './store'
 import ElementPlus from 'element-plus'
