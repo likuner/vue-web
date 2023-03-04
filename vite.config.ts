@@ -13,6 +13,13 @@ export default defineConfig(({ mode }) => {
   return {
     plugins: [
       vue(),
+      AutoImport({
+        imports: ['vue'],
+        resolvers: [ElementPlusResolver()]
+      }),
+      Components({
+        resolvers: [ElementPlusResolver()]
+      }),
       createHtmlPlugin({
         minify: false,
         inject: {
@@ -23,12 +30,6 @@ export default defineConfig(({ mode }) => {
               : ''
           }
         }
-      }),
-      AutoImport({
-        resolvers: [ElementPlusResolver()]
-      }),
-      Components({
-        resolvers: [ElementPlusResolver()]
       })
     ],
     resolve: {
